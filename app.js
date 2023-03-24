@@ -148,7 +148,7 @@ app
     let { data } = await axios.get('http://jsonplaceholder.typicode.com/posts/1');
 
     data = Buffer.from(JSON.stringify(data));
-    await writeFile('posts.json ', data);
+    await writeFile('posts.json', data);
 
     res.send(data);
 
